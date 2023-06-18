@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+html body{
+    background-color: #180000;
+     color: #B5986D;
+    font-family: 'Cormorant';
+}
+@font-face {
+    font-family:'Cormorant';
+    src: url(../Fonts/Cormorant-Regular.otf)
+}
+
+.navbar{
+    font-family: 'Cormorant';
+    background:transparent;
+    border-bottom: #B5986D 1px solid;
+}
+.nav-link:link, .nav-link:active, .nav-link:visited,
+.navbar-brand:link, .navbar-brand:active, .navbar-brand:visited{
+    color: #B5986D;
+    text-transform: uppercase;
+}
+.hero{
+    background: transparent;
+    font-family: 'Cormorant';
+    color: #B5986D;
+    font-weight: 700;
+}
+
+.container-background {
+    background-image: url(../assets/Mask\ group.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 100%;
+  
+}
+.title-hero h1{
+    font-size: clamp(4em, 9vw, 9.5em);
+    font-weight: 500;
+    letter-spacing: .1em;
+}
+.content-hero{
+    font-size: clamp(.7em, 1.4vw, 2em);
+}
+.titulo-h3-linha-do-tempo{
+    color: #B5986D;
+    font-family: 'Cormorant';
+    font-size: clamp(1.5em, 1.5vw, 3em);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.titulo-fundo{
+    font-size: clamp(1.1em, 1.6vw, 5.5em);
+    font-weight: 900;
+    font-family: 'Cormorant';
+    text-transform: uppercase;
+    background: linear-gradient(91.58deg, #B5986D 0.65%, rgba(181, 152, 109, 0) 109.72%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    opacity: 0.1;
+    position: relative;
+    top: 60px;
+    padding-left: 20px;
+}
+.sublinha-texto{
+    content: '';
+    width: 300px;
+    background-color: #B5986D;
+    height: 1px;
+    position: relative;
+    bottom: 5px;
+}
+.item-sublinha-texto{
+    color: #B5986D;
+    font-weight: 600;
+    position: relative;
+    bottom: 12.5px;
+    left: 300px;
+}
+.paragrafo-linha-do-tempo{
+    text-align: justify;
+    color: #B5986D;
+}
+.paragrafo-linha-do-tempo-assinatura{
+    text-align: justify;
+    font-weight: 900;
+    letter-spacing: .5px;
+    font-size: clamp(.7em, 1.1vw, 5.5em);
+    padding: 0;
+    margin: 0;
+    text-align: start;
+    color: #B5986D;
+}
+
+
+
+
+.timeline ul{
+    list-style: url(../assets/ul.png);
+    color: #B5986D;
+}
+.timeline ul li {
+    color: #B5986D;
+    margin-bottom: 90px;
+    font-size: 18px;
+}
+.timeline ul li:last-child{
+    margin-bottom: 0;
+}
+.timeline-content p{
+    font-weight: 500;
+}
+.timeline::before {
+    content: '';
+    position: absolute;
+    height: 105%;
+    width: 2.3px;
+    left: 48.6%;
+    margin-top: 12px;
+    background-color: #B5986D;
+}
+.container-sobre-nos{
+    line-height: 25px;
+}
