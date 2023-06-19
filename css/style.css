@@ -107,7 +107,7 @@ html body{
 }
 .timeline ul li {
     color: #B5986D;
-    margin-bottom: 90px;
+    margin-bottom: 70px;
     font-size: 18px;
 }
 .timeline ul li:last-child{
@@ -119,7 +119,7 @@ html body{
 .timeline::before {
     content: '';
     position: absolute;
-    height: 105%;
+    height:74vh;
     width: 2.3px;
     left: 48.6%;
     margin-top: 12px;
