@@ -1,16 +1,32 @@
+<!-- Copyright 2023 Ester Souza -->
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#B5986D"/>
     <title>Golden Place</title>
+   
+    <!-- Pré-Carregamento De Fonte -->
+    <link rel="preload" href="fonts/Cormorant-Regular.otf" as="font" type="font/otf" crossorigin>
+
+    <!-- Meta Description -->
+    <meta name="description" content="Experimente a excelência culinária em eventos com a equipe gastronômica de elite da nossa empresa. Desde 1983, fornecemos serviços impecáveis para eventos, construindo uma reputação sólida no mercado. Descubra como encantar seu público com sabores requintados e atendimento de primeira classe. Agende seu evento e vivencie uma experiência gastronômica inesquecível.">
+    
+    <!-- Link Canonical -->
+    <link rel="canonical" href="https://www.estersouza.tech">
+    
+    <!-- Style Css -->
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-</head>
+    
+    <!-- Bootstrap 5 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+  </head>
 <body class="container-background">
     <nav class="container-fluid navbar navbar-expand-lg px-5">
-        <a class="navbar-brand" href="#home"><img src="assets/logo.png" alt=""></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="#home"><img src="assets/logo.png" alt="Logo da empresa Golden Place, letras G e P maiúsculas, sobreposta uma sobre a outra, de tamanho grande e com tons de cor dourado claro"></a>
+        <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse  justify-content-end" id="navbarNavDropdown">
@@ -45,16 +61,16 @@
 
 
     <!-- Começo do hero -->
-    <section class="container-fluid content pt-5">
+    <header class="container-fluid content pt-5">
       <div class="d-flex justify-content-center align-items-center pt-5">
         <div class="hero d-flex-column justify-content-center align-items-center">
           <div class="row pt-5">
             <div class="col pt-5 title-hero text-center">
-              <h1>Golden Place</h1>
+              <h1><span lang="en-us">Golden Place</span></h1>
             </div>
           </div>
           <div class="row d-flex justify-content-center ">
-            <img src="assets/Union-hero.svg" alt="" style="max-width: 200px;">
+            <img src="assets/Union-hero.svg" alt="Elemento gráfico de tons de cor dourado claro de formato de linha levemente fina com um item decorativo referente a uma estrela ou asterisco no centro da linha, imagem fixada abaixo do título Golden Place de forma centralizada" style="max-width: 200px;">
           </div>
           <div class="row justify-content-center mb-5 pb-2">
             <div class="col-lg-2 col-md-2 d-none d-sm-block text-center content-hero m-0 p-0">1981</div>
@@ -62,19 +78,19 @@
           </div>
         </div>
       </div>
-    </section>
+    </header>
     <!-- Fim do hero -->
 
 
     <!-- Começo do Nossa História e Sobre Nós -->
-    <section class="container-fluid">
+    <section class="container-fluid container-sobre-nos">
       <div class="pt-5 container-sobre-nos d-flex justify-content-center p-0 m-0">
         <div class="pt-5 row p-0 m-0 justify-content-center">
           <div class="col-lg-3 pt-5 ">
 
                       <div class="conteudo-linha-do-tempo">
                         <div class="titulo-linha-do-tempo">
-                          <p class="titulo-fundo">Nossa História</p>
+                          <h2 class="titulo-fundo">Nossa História</h2>
                           <h3 class="titulo-h3-linha-do-tempo">Nossa História</h3>
                           <div class="sublinha-texto">
                             <div class="item-sublinha-texto"> ⁕</div>
@@ -137,7 +153,7 @@
           <div class="col-lg-3 pt-5 sobre d-flex align-items-end">
             <div class="conteudo-linha-do-tempo">
               <div class="titulo-linha-do-tempo">
-                <p class="titulo-fundo">Sobre nós</p>
+                <h2 class="titulo-fundo">Sobre nós</h2>
                 <h3 class="titulo-h3-linha-do-tempo">Sobre nós</h3>
                 <div class="sublinha-texto">
                   <div class="item-sublinha-texto"> ⁕</div>
@@ -151,14 +167,32 @@
                                 <p class="d-flex justify-content-star w-75 paragrafo-linha-do-tempo-assinatura">Carrote Petrini</p>
                               </div>
                               <div class="row">
-                                <p class="paragrafo-linha-do-tempo">Chef</p>
+                                <p class="paragrafo-linha-do-tempo"><span lang="en-us">Chef</span></p>
                               </div>
                 </div>
              <div class="col-md-6 d-flex justify-content-end">
-                              <img src="assets/Component 1.png" style="max-width: 120px;" alt="">
+                              <img src="assets/Component 1.png" style="max-width: 120px;" alt="Elemento gráfico representando a assinatura escrita do chefe de cozinha Carrote Petrini">
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+    <!-- Fim do Nossa História e Sobre Nós-->
+
+
+    <!-- Começo do Diferencial -->
+    <section class="container-fluid container-diferencial d-none d-md-block d-lg-block d-xl-block">
+      <div class="content-diferencial p-5  d-flex justify-content-center align-items-center">
+        <div class="row">
+          <div class="col-md-4"><h3>abcde</h3></div>
+          <div class="col-md-4"><h3>abcde</h3></div>
+          <div class="col-md-4"><h3>abcde</h3></div>
+        </div>
+        <div class="row">
+          <div class="col-md-4"><h3>abcde</h3></div>
+          <div class="col-md-4"><h3>abcde</h3></div>
+          <div class="col-md-4"><h3>abcde</h3></div>
         </div>
       </div>
     </section>
@@ -168,8 +202,27 @@
 
 
 
-
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>   
+    
+    <!-- Acessibilidade De Fontes -->
+    <script type="text/javascript">
+      const cormorantObserver = new FontFaceObserver('Cormorant-Regular');
+    
+      Promise.all([
+        cormorantObserver.load(),
+      ]).then(function(){
+        document.documentElement.className += " fonts-loaded";
+      });
+    </script>
+    
+     <!-- BF Cachê -->
+     <script src="js/bf-cache.js"></script>
+    
+     <!-- Critical Request Chains -->
+     <script src="js/critical-request-chains.js"></script>
+    
+     <!-- Compreensão de texto -->
+     <script src="js/uses-text-compression.js"></script>
+
 </body>
 </html>

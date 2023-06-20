@@ -9,10 +9,42 @@ html body{
      color: #B5986D;
     font-family: 'Cormorant';
 }
+/* Pré Carregamento De Fontes */
 @font-face {
     font-family:'Cormorant';
-    src: url(../Fonts/Cormorant-Regular.otf)
+    font-style: normal;
+    src: local('Cormorant-Regular'), local('Cormorant-Regular'),
+    url(../Fonts/Cormorant-Regular.otf)
+    format('otf');
+    font-display: swap;
 }
+
+        /* FOIT */
+        html.fonts-loaded{
+            font-family: 'Cormorant', cursive;
+        }
+
+/* Fim Pré Carregamento De Fontes */
+
+
+/* Acessibilidade e Boas Práticas */
+
+img {
+    aspect-ratio: attr(width) / attr(height);
+  }
+/* Fim Acessibilidade e Boas Práticas */
+
+
+.container-background {
+    background-image: url(../assets/Mask\ group.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+
+
+/* Começo Navbar */
 
 .navbar{
     font-family: 'Cormorant';
@@ -20,24 +52,40 @@ html body{
     border-bottom: #B5986D 1px solid;
 }
 .nav-link:link, .nav-link:active, .nav-link:visited,
-.navbar-brand:link, .navbar-brand:active, .navbar-brand:visited{
+.navbar-brand:link, .navbar-brand:active, .navbar-brand:visited, .navbar-dark{
     color: #B5986D;
     text-transform: uppercase;
 }
+.navbar-brand img{
+    width: 30px;
+    height: 37px;
+}
+.custom-toggler {
+    background-color: #B5986D; 
+    border-color: #B5986D; 
+    color: #B5986D; 
+  }
+  .custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23B5986D' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+  
+  /* Fim Navbar */
+
+
+  
+/* Começo Hero */
+
 .hero{
     background: transparent;
     font-family: 'Cormorant';
     color: #B5986D;
     font-weight: 700;
 }
-
-.container-background {
-    background-image: url(../assets/Mask\ group.png);
-    background-size:cover;
-    background-repeat: no-repeat;
-    height: 100%;
-  
+.hero img{
+    width: 200px;
+    height: 9.7px;
 }
+
 .title-hero h1{
     font-size: clamp(4em, 9vw, 9.5em);
     font-weight: 500;
@@ -46,6 +94,12 @@ html body{
 .content-hero{
     font-size: clamp(.7em, 1.4vw, 2em);
 }
+
+/* Fim Hero */
+
+
+
+/* Começo Nossa História e Sobre Nós */
 .titulo-h3-linha-do-tempo{
     color: #B5986D;
     font-family: 'Cormorant';
@@ -98,9 +152,6 @@ html body{
     color: #B5986D;
 }
 
-
-
-
 .timeline ul{
     list-style: url(../assets/ul.png);
     color: #B5986D;
@@ -128,3 +179,19 @@ html body{
 .container-sobre-nos{
     line-height: 25px;
 }
+.container-sobre-nos img{
+    width: 120px;
+    height: 91px;
+}
+
+/* Fim Nossa História e Sobre Nós */
+
+
+
+/* Começo Diferencial */
+.container-diferencial{
+    background-color: #2B0E0E;
+    height: auto;
+}
+
+/* Fim Diferencial */
