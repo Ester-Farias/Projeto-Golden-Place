@@ -53,11 +53,16 @@ img {
     background:transparent;
     border-bottom: #B5986D 1px solid;
 }
+a.nav-link{
+    letter-spacing: .9px;
+    font-weight: lighter;
+}
 .nav-link:link, .navbar-brand:link, 
 .navbar-brand:visited{
     color: #B5986D;
-    text-transform: uppercase;
+    text-transform: uppercase;    
 }
+
 a.nav-link:hover{
     color: #724927;
     transition: .6s;
@@ -104,7 +109,7 @@ a.navbar-brand img:hover{
 }
 
 .title-hero h1{
-    font-size: clamp(4em, 9vw, 9.5em);
+    font-size: clamp(4em, 9vw, 8.5em);
     font-weight: 500;
     letter-spacing: .1em;
 }
@@ -123,7 +128,7 @@ a.navbar-brand img:hover{
     color:#e9cea5;
     letter-spacing: 2.5px;
     font-family: 'Cormorant';
-    font-size: clamp(1.5em, 1.5vw, 3em);
+    font-size: clamp(1.5em, 1.5vw, 1.8em);
     font-weight: 600;
     text-transform: uppercase;
 }
@@ -131,12 +136,12 @@ a.navbar-brand img:hover{
     position: relative;
 }
 .titulo-fundo{
-    font-size: clamp(1.1em, 3vw, 5.5em);
+    font-size: clamp(2.3em, 3vw, 3.1em);
     font-weight: 1000;
     letter-spacing: 2.5px;
     font-family: 'Cormorant';
     text-transform: uppercase;
-    background: linear-gradient(91.58deg, #b5986dad 0.01%, rgba(181, 152, 109, 0) 100.02%);
+    background: linear-gradient(91.58deg, #b5986dad 0%, rgba(181, 152, 109, 0) 85.99%, rgba(181, 152, 109, 0) 1.99%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -164,19 +169,23 @@ a.navbar-brand img:hover{
     bottom: 12.5px;
     left: 300px;
 }
-.paragrafo-linha-do-tempo{
+p.paragrafo-linha-do-tempo{
     text-align: justify;
-    color: #B5986D;
+    color: #cab38f;
+    
+    font-size: clamp(1.1em, 1.1vw, 2.5em);
+    padding: 0;
+    margin: 0;
 }
-.paragrafo-linha-do-tempo-assinatura{
-    text-align: justify;
+p.paragrafo-linha-do-tempo-assinatura{
     font-weight: 900;
-    letter-spacing: .5px;
-    font-size: clamp(.7em, 1.1vw, 5.5em);
+    letter-spacing: 2px;
+    font-size: clamp(1.5em, 1.2vw, 1.9em);
+    border-bottom: #e9cea5 1px solid;
     padding: 0;
     margin: 0;
     text-align: start;
-    color: #B5986D;
+    color: #cab38f;
 }
 
 .timeline ul{
@@ -201,7 +210,7 @@ a.navbar-brand img:hover{
     position: absolute;
     height:74vh;
     width: 2.3px;
-    left: 48.6%;
+    left: 50%;
     margin-top: 12px;
     background-color: #B5986D;
 }
@@ -218,6 +227,20 @@ a.navbar-brand img:hover{
     font-size: clamp(.1em, .9vw, 1.5em);
     color: #e9cea5;
 }
+
+@media (min-width: 1440px)
+{
+    .conteudo-linha-do-tempo-sobre-nos{
+        position: relative;
+        bottom: -30%;
+        transform: translateY(30%);
+        margin: 0;
+        padding: 0; 
+    }
+}
+
+
+
 /* Fim Nossa História e Sobre Nós */
 
 
@@ -225,7 +248,7 @@ a.navbar-brand img:hover{
 /* Começo Diferencial */
 .container-diferencial{
     background-color: #2B0E0E;
-    height: auto;
+
 }
 
 /* Fim Diferencial */
