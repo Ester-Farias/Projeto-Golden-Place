@@ -177,7 +177,8 @@ img {
     background-color: #B5986D;
 }
 .container-sobre-nos{
-    line-height: 25px;
+    line-height: 18px;
+    letter-spacing: 1.1px;
 }
 .container-sobre-nos img{
     width: 120px;
