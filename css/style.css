@@ -10,18 +10,20 @@ html body{
     font-family: 'Cormorant';
 }
 /* Pré Carregamento De Fontes */
+@font-face{
+    font-family: 'Inter';
+    font-style: normal;
+    src: url(../fonts/Inter.ttf);
+}
 @font-face {
     font-family:'Cormorant';
     font-style: normal;
-    src: local('Cormorant-Regular'), local('Cormorant-Regular'),
-    url(../Fonts/Cormorant-Regular.otf)
-    format('otf');
-    font-display: swap;
+    src: url(../fonts/Cormorant-Regular.otf);
 }
 
         /* FOIT */
         html.fonts-loaded{
-            font-family: 'Cormorant', cursive;
+            font-family: 'Cormorant', 'Inter' cursive;
         }
 
 /* Fim Pré Carregamento De Fontes */
@@ -51,10 +53,25 @@ img {
     background:transparent;
     border-bottom: #B5986D 1px solid;
 }
-.nav-link:link, .nav-link:active, .nav-link:visited,
-.navbar-brand:link, .navbar-brand:active, .navbar-brand:visited, .navbar-dark{
+.nav-link:link, .navbar-brand:link, 
+.navbar-brand:visited{
     color: #B5986D;
     text-transform: uppercase;
+}
+a.nav-link:hover{
+    color: #724927;
+    transition: .6s;
+}
+a.nav-link:visited{
+    color: rgb(252, 231, 205);
+}
+a.nav-link:active{
+    color: rgb(228, 129, 112);
+}
+a.navbar-brand img:hover{
+    width: 28px;
+    height: 35px;
+    transition: .1s;
 }
 .navbar-brand img{
     width: 30px;
@@ -92,7 +109,9 @@ img {
     letter-spacing: .1em;
 }
 .content-hero{
-    font-size: clamp(.7em, 1.4vw, 2em);
+    font-size: clamp(.6em, 1vw, 1.5em);
+    
+    font-family: 'Inter';
 }
 
 /* Fim Hero */
@@ -101,26 +120,34 @@ img {
 
 /* Começo Nossa História e Sobre Nós */
 .titulo-h3-linha-do-tempo{
-    color: #B5986D;
+    color:#e9cea5;
+    letter-spacing: 2.5px;
     font-family: 'Cormorant';
     font-size: clamp(1.5em, 1.5vw, 3em);
     font-weight: 600;
     text-transform: uppercase;
 }
+.titulo-linha-do-tempo{
+    position: relative;
+}
 .titulo-fundo{
-    font-size: clamp(1.1em, 1.6vw, 5.5em);
-    font-weight: 900;
+    font-size: clamp(1.1em, 3vw, 5.5em);
+    font-weight: 1000;
+    letter-spacing: 2.5px;
     font-family: 'Cormorant';
     text-transform: uppercase;
-    background: linear-gradient(91.58deg, #B5986D 0.65%, rgba(181, 152, 109, 0) 109.72%);
+    background: linear-gradient(91.58deg, #b5986dad 0.01%, rgba(181, 152, 109, 0) 100.02%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
-    opacity: 0.1;
-    position: relative;
-    top: 60px;
-    padding-left: 20px;
+    /*opacity: 0.1; */
+    position: absolute;
+    top: -1px;
+    transform: translateY(-50%);
+    left: 10px;
+    margin: 0;
+    padding: 0;      
 }
 .sublinha-texto{
     content: '';
@@ -166,6 +193,8 @@ img {
 }
 .timeline-content p{
     font-weight: 500;
+    font-family: 'Inter';
+    font-size: clamp(.1em, .9vw, 1.5em);
 }
 .timeline::before {
     content: '';
@@ -181,10 +210,14 @@ img {
     letter-spacing: 1.1px;
 }
 .container-sobre-nos img{
-    width: 120px;
-    height: 91px;
+    width: 116px;
+    height: 87px;
 }
-
+.paragrafo-linha-do-tempo{
+    font-family: 'Inter';
+    font-size: clamp(.1em, .9vw, 1.5em);
+    color: #e9cea5;
+}
 /* Fim Nossa História e Sobre Nós */
 
 
