@@ -8,6 +8,7 @@ html body{
     background-color: #180000;
      color: #B5986D;
     font-family: 'Cormorant';
+    max-width: 100vw;
 }
 /* Pré Carregamento De Fontes */
 @font-face{
@@ -37,12 +38,14 @@ img {
 /* Fim Acessibilidade e Boas Práticas */
 
 
-.container-background {
+.primeiro-container-background{
     background-image: url(../assets/Mask\ group.png);
     background-size:cover;
     background-repeat: no-repeat;
     height: 100%;
+    max-width: 100vw;
 }
+
 
 
 
@@ -208,10 +211,10 @@ p.paragrafo-linha-do-tempo-assinatura{
 .timeline::before {
     content: '';
     position: absolute;
-    height:74vh;
+    height:85vh;
     width: 2.3px;
-    left: 50%;
-    margin-top: 12px;
+    left: 50.1%;
+    margin-top: 1px;
     background-color: #B5986D;
 }
 .container-sobre-nos{
@@ -239,16 +242,69 @@ p.paragrafo-linha-do-tempo-assinatura{
     }
 }
 
-
-
 /* Fim Nossa História e Sobre Nós */
 
 
 
+
 /* Começo Diferencial */
+.img-selo{
+    position: relative;
+}
+.img-selo img{
+    position: absolute;
+    top: -85px;
+    transform: translateY(-50%);
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    padding: 0; 
+    max-width: 72px;
+    max-height: 82px;
+}
 .container-diferencial{
     background-color: #2B0E0E;
-
 }
 
 /* Fim Diferencial */
+
+
+
+/* Começo Depoimentos */
+#depoimentos{
+    height: 100vh;
+}
+.segundo-container-background{
+    background-image: url(../assets/segundo-container-background.png);
+    background-size:cover;
+    background-position: end end;
+    background-repeat: no-repeat;
+    height: 100vh;
+    max-width: 100vw;
+    position: relative;
+    z-index: 0;
+}
+.title-fundo-depoimentos{
+    font-size: clamp(7.3em, 9vw, 3.1em);
+    font-weight: 1000;
+    letter-spacing: 2.5px;
+    font-family: 'Cormorant';
+    text-transform: uppercase;
+    background: linear-gradient(91.58deg, #b5986dad 0%, rgba(181, 152, 109, 0) 85.99%, rgba(181, 152, 109, 0) 1.99%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    position: absolute;
+    top: 50px;
+    left: 67%;
+    transform: translateY(-50%);
+    
+    transform: translateX(-50%);
+    margin: 0;
+    padding: 0; 
+    z-index: 1;
+    mix-blend-mode:multiply;
+}
+
+/* Fim Depoimentos */
