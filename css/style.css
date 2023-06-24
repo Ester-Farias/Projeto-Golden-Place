@@ -327,9 +327,14 @@ img .carousel-item{
     justify-content: center;
 }
 .card-img-depoimento{
-    width: 150px;
-    height: 150px;
+    border-bottom: #B5986D 3px solid;
+    border-right: #B5986D 3px solid;
+}
+.card-img-depoimento{
+    width: 125px;
+    height: 125px;
     object-fit: cover;
+    padding: 7px;
 }
 .nome-depoimento{
     font-weight: 700;
@@ -444,17 +449,149 @@ img .carousel-item{
     height: 105vh;
     display: flex;
     justify-content: center;
-    align-items:center;
+ 
+    
 }
 .container-jornal{
-    
-    width: 70vw;
-}
-.materia-1, .materia-2, .materia-3{
-    text-align: justify;
-    margin: 20px;
-    display: flex;
-    align-items: end;
+    width: 80vw;
 }
 
+.materia-1, .materia-2, .materia-3{
+    text-align: justify;
+    margin: 10px;
+}
+.midia-dados{
+    font-family: 'Inter';
+    font-weight: 600;
+    letter-spacing: 2px;
+}
 /* Fim Midia */
+
+
+/* Começo Desgustação */
+
+.titulo-fundo-degustacao{
+    font-size: clamp(2.3em, 3vw, 3.1em);
+    font-weight: 1000;
+    letter-spacing: 2.5px;
+    font-family: 'Cormorant';
+    text-transform: uppercase;
+    background: linear-gradient(91.58deg, #b5986dad 0%, rgba(181, 152, 109, 0) 85.99%, rgba(181, 152, 109, 0) 1.99%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    /*opacity: 0.1; */
+    position: absolute;
+    top: 30.5%;
+    transform: translateY(-50%), translateX(50%);
+    left: 11.5%;
+    margin: 0;
+    padding: 0;
+}
+#degustacao{
+position: relative;
+}
+.link-degustacao{
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+a.link-degustacao:active{
+    color: #B5986D;
+}
+a.link-degustacao:link{
+    color:#cab38f;
+}
+a.link-degustacao:hover{
+    color:#724927;
+} 
+.text-degustacao{
+    width: 30vw;
+    text-align: justify;
+}
+/* Fim Degustação */
+
+
+
+/* Começo Contato */
+.quinto-container-background{
+
+
+background-image: url(../assets/background-ondas-3d-vermelho-claro-escuro-vinho-quinto-background.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: bottom bottom;
+    height: auto;
+    max-width: 100vw;
+    position: relative;
+    pointer-events: none;
+}
+.titulo-fundo-contato{
+    font-size: clamp(2.3em, 3vw, 3.1em);
+    font-weight: 1000;
+    letter-spacing: 2.5px;
+    font-family: 'Cormorant';
+    text-transform: uppercase;
+    background: linear-gradient(91.58deg, #b5986dad 0%, rgba(181, 152, 109, 0) 85.99%, rgba(181, 152, 109, 0) 1.99%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    /*opacity: 0.1; */
+    position: absolute;
+    top: 21.8%;
+    transform: translateY(-50%), translateX(50%);
+    left:41.4%;
+    margin: 0;
+    padding: 0;
+}
+
+.form-control-contato{
+    background-color: transparent;
+    border: none;
+    border-bottom: #B5986D 1px solid;
+    width: 300px;
+}
+.form-control-contato::placeholder{
+    color: #B5986D;
+}
+.btn-contato{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #B5986D;
+    width: 100px;
+    text-align: left;
+    color: #B5986D;
+}
+.btn-contato:hover{
+    color: #724927;
+}
+.btn-contato::after{
+    padding: 0;
+    margin: 0;
+}
+.item-sublinha-texto-btn-contato{
+    color: #B5986D;
+    font-weight: 600;
+    position: relative;
+    bottom: 12.6px;
+    left: 100px;
+}
+.container-form-contato{
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+    /* Fim contato */
+
+
+
+/* Começo Footer */
+
+footer{
+    border-top: 2px solid #B5986D;
+    height: 10vh;
+    padding: 50px;
+}
+/* Fim Footer */

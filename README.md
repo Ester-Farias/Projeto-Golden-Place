@@ -1,6 +1,6 @@
 <br>
 <h1 align="center">GOLDEN PLACE</h1>
-<img src="assets/read.me.png">
+<img src="assets/read-me.png>
 <hr>
 <h2 align="center">Ongoing project<br>Projeto em andamento </h2>
 <h2 align="center">✍</h2>
