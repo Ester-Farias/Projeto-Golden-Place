@@ -319,10 +319,13 @@ img .carousel-item{
 .card-depoimento {
     height: auto;
     width: 25vw;
-    background-color: rgba(238, 130, 238, 0.11);
-    padding: 15px 30px;
+    padding-top: 45px;
+    padding-left:30px;
+    padding-right:30px;
+    padding-bottom: 15px;
     margin: 2px;
     border-radius: 10px;
+    justify-content: center;
 }
 .card-img-depoimento{
     width: 150px;
@@ -332,16 +335,17 @@ img .carousel-item{
 .nome-depoimento{
     font-weight: 700;
     font-size: 20px;
-    padding-bottom: 0;
+    margin: 0;
 }
 .p-depoimento{
-    padding-top: 0;
+    padding-top: 8px;
     text-align: justify;
 }
 
 .carousel-rating {
-    margin-top: 5px;
     color: yellow;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #724927;
   }
 
 .carousel-rating .star {
@@ -376,10 +380,15 @@ img .carousel-item{
 }
 
 /* css avegação manual do slide */
-
-.navegacao-manual{
+.title-depoimentos{
     position: absolute;
     width: 25vw;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.navegacao-manual{
+    position: absolute;
     display: flex;
     justify-content: center;      
 }
@@ -392,13 +401,12 @@ img .carousel-item{
 }
 
 .manual-btn:not(:last-child){
-    margin-right:106px;
+    margin-right:90px;
 }
 
 .manual-btn:hover{
     background-color: #B5986D;
 }
-
 
 #radio1:checked ~ .primeiro{
     margin-left:0;
@@ -406,16 +414,13 @@ img .carousel-item{
 }
 #radio2:checked ~ .primeiro{
     margin-left:-25%;
-    
     transition: 2s;
 }
 #radio3:checked ~ .primeiro{
     margin-left:-50%;
-    
     transition: 2s;
 }
 #radio4:checked ~ .primeiro{
     margin-left:-75%;
-    
     transition: 2s;
 }
