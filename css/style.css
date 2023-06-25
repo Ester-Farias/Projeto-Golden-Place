@@ -6,9 +6,9 @@
 }
 html body{
     background-color: #180000;
-     color: #B5986D;
-    font-family: 'Cormorant';
-    max-width: 100vw;
+    color: #B5986D;
+    font-family: 'Cormorant', 'Inter', sans-serif, cursive;
+    width: 100%;
 }
 /* Pré Carregamento De Fontes */
 @font-face{
@@ -24,26 +24,20 @@ html body{
 
         /* FOIT */
         html.fonts-loaded{
-            font-family: 'Cormorant', 'Inter' cursive;
+            font-family: 'Cormorant', 'Inter' , sans-serif, cursive;
         }
 
 /* Fim Pré Carregamento De Fontes */
 
 
-/* Acessibilidade e Boas Práticas */
-
-img {
-    aspect-ratio: attr(width) / attr(height);
-  }
-/* Fim Acessibilidade e Boas Práticas */
-
 
 .primeiro-container-background{
     background-image: url(../assets/Mask\ group.png);
     background-size:cover;
+    background-position: center center;
     background-repeat: no-repeat;
     height: 100%;
-    max-width: 100vw;
+    width: 100%;
 }
 
 
@@ -52,7 +46,7 @@ img {
 /* Começo Navbar */
 
 .navbar{
-    font-family: 'Cormorant';
+    font-family: 'Cormorant' , sans-serif;
     background:transparent;
     border-bottom: #B5986D 1px solid;
 }
@@ -102,13 +96,12 @@ a.navbar-brand img:hover{
 
 .hero{
     background: transparent;
-    font-family: 'Cormorant';
+    font-family: 'Cormorant', sans-serif;
     color: #B5986D;
     font-weight: 700;
 }
 .hero img{
     width: 200px;
-    height: 9.7px;
 }
 
 .title-hero h1{
@@ -119,75 +112,73 @@ a.navbar-brand img:hover{
 .content-hero{
     font-size: clamp(.6em, 1vw, 1.5em);
     
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
 }
 
 /* Fim Hero */
-
 
 
 /* Começo Nossa História e Sobre Nós */
 .titulo-h3-linha-do-tempo{
     color:#e9cea5;
     letter-spacing: 2.5px;
-    font-family: 'Cormorant';
+    font-family: 'Cormorant', sans-serif;
     font-size: clamp(1.5em, 1.5vw, 1.8em);
     font-weight: 600;
     text-transform: uppercase;
+    padding: 0 15px;
 }
 .titulo-linha-do-tempo{
     position: relative;
 }
-.titulo-fundo{
-    font-size: clamp(2.3em, 3vw, 3.1em);
+.titulo-fundo-nossa-historia{
+    font-size: clamp(2.3em, 2.6vw, 2.9em);
     font-weight: 1000;
     letter-spacing: 2.5px;
-    font-family: 'Cormorant';
+    font-family: 'Cormorant', sans-serif;
     text-transform: uppercase;
     background: linear-gradient(91.58deg, #b5986dad 0%, rgba(181, 152, 109, 0) 85.99%, rgba(181, 152, 109, 0) 1.99%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-fill-color: transparent;
     /*opacity: 0.1; */
     position: absolute;
     top: -1px;
     transform: translateY(-50%);
     left: 10px;
     margin: 0;
-    padding: 0;      
+    padding: 0 5px;     
 }
 .sublinha-texto{
     content: '';
-    width: 300px;
+    width: 285px;
     background-color: #B5986D;
     height: 1px;
     position: relative;
     bottom: 5px;
+    margin-top: 8px;
+    
 }
 .item-sublinha-texto{
     color: #B5986D;
     font-weight: 600;
     position: relative;
-    bottom: 12.5px;
-    left: 300px;
+    bottom: 14px;
+    left: 283px;
 }
-p.paragrafo-linha-do-tempo{
-    text-align: justify;
-    color: #cab38f;
-    font-size: clamp(.8em, .9vw, 2.4em);
-    padding: 0;
-    margin: 0;
-}
+
 p.paragrafo-linha-do-tempo-assinatura{
     font-weight: 900;
     letter-spacing: 2px;
-    font-size: clamp(1.5em, 1.2vw, 1.9em);
-    border-bottom: #e9cea5 1px solid;
-    padding: 0;
+    font-size: clamp(1.1em, 1.2vw, 1.9em);
+    padding: 5px 25px;
     margin: 0;
     text-align: start;
     color: #cab38f;
+}
+.img-sobre-nos{
+    max-width: 120px;
+    padding-right:17px;
 }
 
 .timeline ul{
@@ -204,7 +195,7 @@ p.paragrafo-linha-do-tempo-assinatura{
 }
 .timeline-content p{
     font-weight: 500;
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-size: clamp(.1em, .9vw, 1.5em);
 }
 .timeline::before {
@@ -224,9 +215,14 @@ p.paragrafo-linha-do-tempo-assinatura{
     width: 116px;
     height: 87px;
 }
-.paragrafo-linha-do-tempo{
-    font-family: 'Inter';
-    font-size: clamp(.1em, .9vw, 1.5em);
+.paragrafo-linha-do-tempo > span{
+    padding: 0 12px;
+}
+.paragrafo-linha-do-tempo-sobre-nos{
+    font-family: 'Inter', sans-serif;
+    text-align: justify;
+    padding: 0 15px;
+    font-size: clamp(.7em, .9vw, 1.5em);
     color: #e9cea5;
 }
 
@@ -270,44 +266,41 @@ p.paragrafo-linha-do-tempo-assinatura{
 
 
 /* Começo Depoimentos */
-#depoimentos{
-    height: 100vh;
-}
+
 .segundo-container-background{
     background-image: url(../assets/segundo-container-background.png);
     background-size:cover;
-    background-position: end end;
+    background-position: center center;
     background-repeat: no-repeat;
     height: 100vh;
     max-width: 100vw;
     position: relative;
     z-index: 1;
 }
+
 .container-depoimento{
-    height: auto;
-    width: 25vw;    
+    height: 90vh;
     display: flex;
     justify-content: center;
 }
+
 img .carousel-item{
     z-index: 3;
 }
 .title-fundo-depoimentos{
-    font-size: clamp(7.3em, 9vw, 3.1em);
+    font-size: clamp(.1em, 8.8vw, 7.3em);
     font-weight: 1000;
     letter-spacing: 2.5px;
-    font-family: 'Cormorant';
+    font-family: 'Cormorant', sans-serif;
     text-transform: uppercase;
     background: linear-gradient(91.58deg, #b5986dad 0%, rgba(181, 152, 109, 0) 85.99%, rgba(181, 152, 109, 0) 1.99%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-fill-color: transparent;
     position: absolute;
     top: 50px;
     left: 67%;
     transform: translateY(-50%);
-    
     transform: translateX(-50%);
     margin: 0;
     padding: 0; 
@@ -316,25 +309,21 @@ img .carousel-item{
 }
 
 .card-depoimento {
-    height: auto;
-    width: 25vw;
-    padding-top: 45px;
-    padding-left:30px;
-    padding-right:30px;
-    padding-bottom: 15px;
-    margin: 2px;
-    border-radius: 10px;
+    display:block;
+    margin: 20px;
     justify-content: center;
+    height: auto;
+    padding: 15px;
+    width: clamp(350px, 1.2vw, 440px);
 }
-.card-img-depoimento{
-    border-bottom: #B5986D 3px solid;
-    border-right: #B5986D 3px solid;
-}
+
 .card-img-depoimento{
     width: 125px;
     height: 125px;
+    border: #B5986D 2px solid;
+    border-radius: 50%;
     object-fit: cover;
-    padding: 7px;
+    padding: 5px;
 }
 .nome-depoimento{
     font-weight: 700;
@@ -359,21 +348,22 @@ img .carousel-item{
   }
 .carousel-rating .preenchida{
     color: yellow;
-    
   }
-  
 
 .slider-depoimentos{ 
-    width: 25.3vw;
+    width: clamp(370px, 50%, 400px);
     display:flex;
-    justify-content: start;
+    justify-content: flex-start;
     height: auto;
-    overflow: hidden; 
+    padding: 10px; 
+    overflow: hidden;
 }
 .slides-depoimentos{
-    width: 500%;
+    width: 450%;
     height: auto;
     display: flex;
+    justify-content: center;
+    
 }
 .slides-depoimentos input{
     display:none;
@@ -386,10 +376,9 @@ img .carousel-item{
 /* css avegação manual do slide */
 .title-depoimentos{
     position: absolute;
-    width: 25vw;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+   
 }
 .navegacao-manual{
     position: absolute;
@@ -405,7 +394,7 @@ img .carousel-item{
 }
 
 .manual-btn:not(:last-child){
-    margin-right:90px;
+    margin-right:75px;
 }
 
 .manual-btn:hover{
@@ -417,15 +406,15 @@ img .carousel-item{
     transition: .9s;
 }
 #radio2:checked ~ .primeiro{
-    margin-left:-25%;
-    transition: 2s;
-}
-#radio3:checked ~ .primeiro{
     margin-left:-50%;
     transition: 2s;
 }
+#radio3:checked ~ .primeiro{
+    margin-left:-100%;
+    transition: 2s;
+}
 #radio4:checked ~ .primeiro{
-    margin-left:-75%;
+    margin-left:-150%;
     transition: 2s;
 }
 
@@ -461,7 +450,7 @@ img .carousel-item{
     margin: 10px;
 }
 .midia-dados{
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-weight: 600;
     letter-spacing: 2px;
 }
@@ -474,17 +463,16 @@ img .carousel-item{
     font-size: clamp(2.3em, 3vw, 3.1em);
     font-weight: 1000;
     letter-spacing: 2.5px;
-    font-family: 'Cormorant';
+    font-family: 'Cormorant', sans-serif;
     text-transform: uppercase;
     background: linear-gradient(91.58deg, #b5986dad 0%, rgba(181, 152, 109, 0) 85.99%, rgba(181, 152, 109, 0) 1.99%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-fill-color: transparent;
     /*opacity: 0.1; */
     position: absolute;
     top: 30.5%;
-    transform: translateY(-50%), translateX(50%);
+    transform: translateY(-50%) translateX(50%);
     left: 11.5%;
     margin: 0;
     padding: 0;
@@ -517,32 +505,32 @@ a.link-degustacao:hover{
 
 /* Começo Contato */
 .quinto-container-background{
-
-
-background-image: url(../assets/background-ondas-3d-vermelho-claro-escuro-vinho-quinto-background.png);
-    background-size:cover;
+   
+    background-image: url(../assets/background-ondas-3d-vermelho-claro-escuro-vinho-quinto-background.png);
+    background-size:auto;
     background-repeat: no-repeat;
-    background-position: bottom bottom;
-    height: auto;
+    height: 100vh;
     max-width: 100vw;
     position: relative;
     pointer-events: none;
-}
+}    
+
+ 
+
 .titulo-fundo-contato{
     font-size: clamp(2.3em, 3vw, 3.1em);
     font-weight: 1000;
     letter-spacing: 2.5px;
-    font-family: 'Cormorant';
+    font-family: 'Cormorant', sans-serif;
     text-transform: uppercase;
     background: linear-gradient(91.58deg, #b5986dad 0%, rgba(181, 152, 109, 0) 85.99%, rgba(181, 152, 109, 0) 1.99%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-fill-color: transparent;
     /*opacity: 0.1; */
     position: absolute;
     top: 21.8%;
-    transform: translateY(-50%), translateX(50%);
+    transform: translateY(-50%) translateX(50%);
     left:41.4%;
     margin: 0;
     padding: 0;
@@ -579,10 +567,7 @@ background-image: url(../assets/background-ondas-3d-vermelho-claro-escuro-vinho-
     bottom: 12.6px;
     left: 100px;
 }
-.container-form-contato{
-    margin-top: 50px;
-    margin-bottom: 60px;
-}
+
     /* Fim contato */
 
 
@@ -593,5 +578,17 @@ footer{
     border-top: 2px solid #B5986D;
     height: 10vh;
     padding: 50px;
+    max-width: 100vw;
 }
 /* Fim Footer */
+
+
+
+
+
+
+
+
+@media screen {
+    
+}
