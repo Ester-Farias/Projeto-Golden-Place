@@ -8,7 +8,7 @@ html body{
     background-color: #180000;
     color: #B5986D;
     font-family: 'Cormorant', 'Inter', sans-serif, cursive;
-    width: 100%;
+    
 }
 /* Pré Carregamento De Fontes */
 @font-face{
@@ -70,6 +70,7 @@ a.nav-link:visited{
 a.nav-link:active{
     color: rgb(228, 129, 112);
 }
+*/ 
 a.navbar-brand img:hover{
     width: 28px;
     height: 35px;
@@ -78,7 +79,7 @@ a.navbar-brand img:hover{
 .navbar-brand img{
     width: 30px;
     height: 37px;
-}
+} 
 .custom-toggler {
     background-color: #B5986D; 
     border-color: #B5986D; 
@@ -100,9 +101,10 @@ a.navbar-brand img:hover{
     color: #B5986D;
     font-weight: 700;
 }
+*/
 .hero img{
     width: 200px;
-}
+} 
 
 .title-hero h1{
     font-size: clamp(4em, 9vw, 8.5em);
@@ -141,7 +143,7 @@ a.navbar-brand img:hover{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    /*opacity: 0.1; */
+    
     position: absolute;
     top: -1px;
     transform: translateY(-50%);
@@ -164,7 +166,7 @@ a.navbar-brand img:hover{
     font-weight: 600;
     position: relative;
     bottom: 14px;
-    left: 283px;
+    left: 275px;
 }
 
 p.paragrafo-linha-do-tempo-assinatura{
@@ -176,10 +178,11 @@ p.paragrafo-linha-do-tempo-assinatura{
     text-align: start;
     color: #cab38f;
 }
+*/ 
 .img-sobre-nos{
-    max-width: 120px;
+    width: 120px;
     padding-right:17px;
-}
+} 
 
 .timeline ul{
     list-style: url(../assets/ul.png);
@@ -211,10 +214,11 @@ p.paragrafo-linha-do-tempo-assinatura{
     line-height: 18px;
     letter-spacing: 1.1px;
 }
+
 .container-sobre-nos img{
     width: 116px;
     height: 87px;
-}
+} 
 .paragrafo-linha-do-tempo > span{
     padding: 0 12px;
 }
@@ -243,9 +247,11 @@ p.paragrafo-linha-do-tempo-assinatura{
 
 
 /* Começo Diferencial */
+
 .img-selo{
     position: relative;
 }
+
 .img-selo img{
     position: absolute;
     top: -85px;
@@ -254,9 +260,10 @@ p.paragrafo-linha-do-tempo-assinatura{
     transform: translateX(-50%);
     margin: 0;
     padding: 0; 
-    max-width: 72px;
+    width: 72px;
     max-height: 82px;
 }
+
 .container-diferencial{
     background-color: #2B0E0E;
 }
@@ -273,7 +280,7 @@ p.paragrafo-linha-do-tempo-assinatura{
     background-position: center center;
     background-repeat: no-repeat;
     height: 100vh;
-    max-width: 100vw;
+    width: 100%;
     position: relative;
     z-index: 1;
 }
@@ -428,7 +435,7 @@ img .carousel-item{
     background-size:contain;
     background-repeat: no-repeat;
     height: 100vh;
-    max-width: 100vw;
+    width: 100%;
     position: relative;
     z-index: 2;
     top: -60px;
@@ -442,7 +449,7 @@ img .carousel-item{
     
 }
 .container-jornal{
-    width: 80vw;
+    width: 80%;
 }
 
 .materia-1, .materia-2, .materia-3{
@@ -469,7 +476,7 @@ img .carousel-item{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    /*opacity: 0.1; */
+   
     position: absolute;
     top: 30.5%;
     transform: translateY(-50%) translateX(50%);
@@ -507,10 +514,10 @@ a.link-degustacao:hover{
 .quinto-container-background{
    
     background-image: url(../assets/background-ondas-3d-vermelho-claro-escuro-vinho-quinto-background.png);
-    background-size:auto;
+    background-size:cover;
     background-repeat: no-repeat;
     height: 100vh;
-    max-width: 100vw;
+    width: 100%;
     position: relative;
     pointer-events: none;
 }    
@@ -527,7 +534,7 @@ a.link-degustacao:hover{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    /*opacity: 0.1; */
+    
     position: absolute;
     top: 21.8%;
     transform: translateY(-50%) translateX(50%);
@@ -572,13 +579,13 @@ a.link-degustacao:hover{
 
 
 
-/* Começo Footer */
+/* Começo Footer 
 
 footer{
     border-top: 2px solid #B5986D;
     height: 10vh;
     padding: 50px;
-    max-width: 100vw;
+    width: 100%;
 }
 /* Fim Footer */
 
@@ -586,9 +593,3 @@ footer{
 
 
 
-
-
-
-@media screen {
-    
-}
