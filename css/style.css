@@ -5,6 +5,7 @@
     
 }
 html body{
+    overflow-x: hidden;
     background-color: #180000;
     color: #B5986D;
     font-family: 'Cormorant', 'Inter', sans-serif, cursive;
@@ -283,12 +284,21 @@ p.paragrafo-linha-do-tempo-assinatura{
     width: 100%;
     position: relative;
     z-index: 1;
-}
-
-.container-depoimento{
-    height: 90vh;
     display: flex;
     justify-content: center;
+}
+#depoimentos{
+    padding: 0;
+    margin: 0;
+}
+.container-depoimento{
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
 }
 
 img .carousel-item{
@@ -314,8 +324,7 @@ img .carousel-item{
     z-index: 1;
     mix-blend-mode:multiply;
 }
-@media (max-width: 1439px)
-{
+@media (max-width: 1439px) {
     .title-fundo-depoimentos{
         display: none;
     }
@@ -325,9 +334,7 @@ img .carousel-item{
 }
 
 .card-depoimento {
-    display:block;
     margin: 20px;
-    justify-content: center;
     height: auto;
     padding: 15px;
     width: clamp(350px, 1.2vw, 440px);
@@ -371,11 +378,12 @@ img .carousel-item{
     display:flex;
     justify-content: flex-start;
     height: auto;
-    padding: 10px; 
+    margin: 0;
     overflow: hidden;
 }
 .slides-depoimentos{
     width: 450%;
+    margin-top:  clamp(5em, 10vw, 15em);
     height: auto;
     display: flex;
     justify-content: center;
@@ -389,6 +397,64 @@ img .carousel-item{
     transform: 2s;
 }
 
+@media (min-width:289px) and (max-width:767px){
+    .navegacao-manual{
+        position: absolute;
+        display: flex;
+        justify-content: start;
+        top: 105%;
+        left: 9.5%;     
+    }
+    .manual-btn{
+        border: 2px solid #B5986D;
+        border-radius: 50%;
+        padding: 10px;
+        cursor: pointer;
+        transform: 1s;
+    }
+    .manual-btn:not(:last-child){
+        margin-right:70px;
+    }
+}
+@media (min-width:768px) and (max-width:1024px){
+    .navegacao-manual{
+        position: absolute;
+        display: flex;
+        justify-content: start;
+        top: 87%;
+        left: 29%;     
+    }
+    .manual-btn{
+        border: 2px solid #B5986D;
+        border-radius: 50%;
+        padding: 9px;
+        cursor: pointer;
+        transform: 1s;
+    }
+    .manual-btn:not(:last-child){
+        margin-right:75px;
+    }
+}
+@media (min-width:1025px){
+    .navegacao-manual{
+        position: absolute;
+        display: flex;
+        justify-content: center; 
+        top: 79%;     
+    }
+    .manual-btn{
+        border: 2px solid #B5986D;
+        border-radius: 50%;
+        padding: 6px;
+        cursor: pointer;
+        transform: 1s;
+    }
+    .manual-btn:not(:last-child){
+        margin-right:85px;
+    }
+}
+
+
 /* css avegação manual do slide */
 .title-depoimentos{
     position: absolute;
@@ -396,22 +462,9 @@ img .carousel-item{
     transform: translateX(-50%);
    
 }
-.navegacao-manual{
-    position: absolute;
-    display: flex;
-    justify-content: center;      
-}
-.manual-btn{
-    border: 3px solid #B5986D;
-    border-radius: 50%;
-    padding: 5px;
-    cursor: pointer;
-    transform: 1s;   
-}
 
-.manual-btn:not(:last-child){
-    margin-right:75px;
-}
+
+
 
 .manual-btn:hover{
     background-color: #B5986D;
