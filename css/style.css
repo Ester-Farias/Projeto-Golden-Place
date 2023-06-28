@@ -70,7 +70,7 @@ a.nav-link:visited{
 a.nav-link:active{
     color: rgb(228, 129, 112);
 }
-*/ 
+
 a.navbar-brand img:hover{
     width: 28px;
     height: 35px;
@@ -101,7 +101,7 @@ a.navbar-brand img:hover{
     color: #B5986D;
     font-weight: 700;
 }
-*/
+
 .hero img{
     width: 200px;
 } 
@@ -178,7 +178,7 @@ p.paragrafo-linha-do-tempo-assinatura{
     text-align: start;
     color: #cab38f;
 }
-*/ 
+
 .img-sobre-nos{
     width: 120px;
     padding-right:17px;
@@ -204,7 +204,7 @@ p.paragrafo-linha-do-tempo-assinatura{
 .timeline::before {
     content: '';
     position: absolute;
-    height:85vh;
+    height:68vh;
     width: 2.3px;
     left: 50.1%;
     margin-top: 1px;
@@ -313,6 +313,15 @@ img .carousel-item{
     padding: 0; 
     z-index: 1;
     mix-blend-mode:multiply;
+}
+@media (max-width: 1439px)
+{
+    .title-fundo-depoimentos{
+        display: none;
+    }
+    .segundo-container-background{
+        height: 70vh;
+    }
 }
 
 .card-depoimento {
@@ -441,6 +450,24 @@ img .carousel-item{
     top: -60px;
     pointer-events: none;
 }
+@media (max-width: 1439px)
+{
+    .terceiro-container-background{
+        height: 75vh;
+    }
+    
+}
+@media(min-width: 768px) and (max-width:1024px){
+    .terceiro-container-background{
+        height: 50vh;
+    }
+    .container-jornal{
+        height: 60vh;
+    }
+    .materia-3{
+        padding: 0;
+    }
+}
 #midia{
     height: 105vh;
     display: flex;
@@ -476,13 +503,73 @@ img .carousel-item{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-   
     position: absolute;
-    top: 30.5%;
+    top: 33.5%;
     transform: translateY(-50%) translateX(50%);
-    left: 11.5%;
+    right: 81.1%;
     margin: 0;
     padding: 0;
+}
+@media (min-width:768px) and (max-width:1024px){
+    .container-degustacao{
+        display: flex;
+        justify-content: center;
+    }
+    .text-degustacao{
+        min-width: 75vw;
+        padding: 30px 0;
+    }
+    .titulo-fundo-degustacao{
+        font-size: clamp(2.3em, 3vw, 3.1em);
+        font-weight: 1000;
+        letter-spacing: 2.5px;
+        font-family: 'Cormorant', sans-serif;
+        text-transform: uppercase;
+        background: linear-gradient(91.58deg, #b5986dad 0%, rgba(181, 152, 109, 0) 85.99%, rgba(181, 152, 109, 0) 1.99%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        position: absolute;
+        top: 17.5%;
+        transform: translateY(-50%) translateX(50%);
+        right: 68.1%;
+        margin: 0;
+        padding: 0;
+    }
+}
+@media (min-width:289px) and (max-width:767px){
+    .titulo-fundo-degustacao{
+        font-size: clamp(2.3em, 3vw, 3.1em);
+        font-weight: 1000;
+        letter-spacing: 2.5px;
+        font-family: 'Cormorant', sans-serif;
+        text-transform: uppercase;
+        background: linear-gradient(91.58deg, #b5986dad 0%, rgba(181, 152, 109, 0) 85.99%, rgba(181, 152, 109, 0) 1.99%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        position: absolute;
+        top: 14%;
+        transform: translateY(-50%) translateX(50%);
+        right: 48%;
+        margin: 0;
+        padding: 0;
+    }
+    #degustacao{
+        margin-top: 70px;
+        margin-bottom: 70px;
+        width: 90vw;
+        display: flex;
+        justify-content: center;
+    }
+    .container-degustacao{
+        display: flex;
+        justify-content: center;
+    }
+    .text-degustacao{
+        min-width:75vw;
+        padding: 30px 0;
+    }
 }
 #degustacao{
 position: relative;
@@ -512,19 +599,17 @@ a.link-degustacao:hover{
 
 /* Começo Contato */
 .quinto-container-background{
-   
     background-image: url(../assets/background-ondas-3d-vermelho-claro-escuro-vinho-quinto-background.png);
     background-size:cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: auto;
     width: 100%;
     position: relative;
-    pointer-events: none;
+    padding: 0;
 }    
 
- 
-
-.titulo-fundo-contato{
+@media (min-width:768px) and (max-width:1024px){
+    .titulo-fundo-contato{
     font-size: clamp(2.3em, 3vw, 3.1em);
     font-weight: 1000;
     letter-spacing: 2.5px;
@@ -534,20 +619,126 @@ a.link-degustacao:hover{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    
     position: absolute;
-    top: 21.8%;
+    top: 9%;
     transform: translateY(-50%) translateX(50%);
-    left:41.4%;
+    left:21%;
     margin: 0;
     padding: 0;
+    }
+    .item-sublinha-texto-btn-contato{
+        color: #B5986D;
+        font-weight: 600;
+        position: relative;
+        bottom: 14px;
+        left: 99px;
+    }
+    .item-sublinha-texto-contato{
+        color: #B5986D;
+        font-weight: 600;
+        position: relative;
+        bottom: 14px;
+        left: 299px;
+    }
+    .item-sublinha-title-contato{
+        color: #B5986D;
+        font-weight: 600;
+        position: relative;
+        bottom: 13px;
+        left: 280px;
+    }
 }
 
+@media (min-width:289px) and (max-width:767px){
+    .titulo-fundo-contato{
+    font-size: clamp(2.3em, 3vw, 3.1em);
+    font-weight: 1000;
+    letter-spacing: 2.5px;
+    font-family: 'Cormorant', sans-serif;
+    text-transform: uppercase;
+    background: linear-gradient(91.58deg, #b5986dad 0%, rgba(181, 152, 109, 0) 85.99%, rgba(181, 152, 109, 0) 1.99%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: absolute;
+    top: 9%;
+    transform: translateY(-50%) translateX(50%);
+    left:-8%;
+    margin: 0;
+    padding: 0;
+    }
+    .item-sublinha-texto-btn-contato{
+        color: #B5986D;
+        font-weight: 600;
+        position: relative;
+        bottom: 13px;
+        left: 98px;
+    }
+    .item-sublinha-texto-contato{
+        color: #B5986D;
+        font-weight: 600;
+        position: relative;
+        bottom: 13px;
+        left: 298px;
+    }
+    .item-sublinha-title-contato{
+        color: #B5986D;
+        font-weight: 600;
+        position: relative;
+        bottom: 12px;
+        left: 280px;
+    }
+}
+ 
+@media (min-width:1025px){
+    .titulo-fundo-contato{
+        font-size: clamp(2.3em, 3vw, 3.1em);
+        font-weight: 1000;
+        letter-spacing: 2.5px;
+        font-family: 'Cormorant', sans-serif;
+        text-transform: uppercase;
+        background: linear-gradient(91.58deg, #b5986dad 0%, rgba(181, 152, 109, 0) 85.99%, rgba(181, 152, 109, 0) 1.99%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        position: absolute;
+        top: 8%;
+        transform: translateY(-50%) translateX(50%);
+        left:32.8%;
+        margin: 0;
+        padding: 0;
+    }
+    #contato{
+        padding: 80px;
+    }
+    .item-sublinha-texto-btn-contato{
+        color: #B5986D;
+        font-weight: 600;
+        position: relative;
+        bottom: 14px;
+        left: 100px;
+    }
+    .item-sublinha-texto-contato{
+        color: #B5986D;
+        font-weight: 600;
+        position: relative;
+        bottom: 14px;
+        left: 299px;
+    }
+    .item-sublinha-title-contato{
+        color: #B5986D;
+        font-weight: 600;
+        position: relative;
+        bottom: 13px;
+        left: 280px;
+    }
+}
 .form-control-contato{
     background-color: transparent;
     border: none;
     border-bottom: #B5986D 1px solid;
     width: 300px;
+    color: #B5986D;
 }
 .form-control-contato::placeholder{
     color: #B5986D;
@@ -567,24 +758,17 @@ a.link-degustacao:hover{
     padding: 0;
     margin: 0;
 }
-.item-sublinha-texto-btn-contato{
-    color: #B5986D;
-    font-weight: 600;
-    position: relative;
-    bottom: 12.6px;
-    left: 100px;
-}
+
 
     /* Fim contato */
 
 
 
-/* Começo Footer 
+/* Começo Footer */
 
 footer{
-    border-top: 2px solid #B5986D;
+    border-top: 1px solid #B5986D;
     height: 10vh;
-    padding: 50px;
     width: 100%;
 }
 /* Fim Footer */
