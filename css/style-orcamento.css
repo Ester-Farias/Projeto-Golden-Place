@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html body{
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: #180000;
+    color: #B5986D;
+    font-family: 'Cormorant', 'Inter', sans-serif, cursive;
+    
+}
+/* Pré Carregamento De Fontes */
+@font-face{
+    font-family: 'Inter';
+    font-style: normal;
+    src: url(../fonts/Inter.ttf);
+}
+@font-face {
+    font-family:'Cormorant';
+    font-style: normal;
+    src: url(../fonts/Cormorant-Regular.otf);
+}
+
+        /* FOIT */
+        html.fonts-loaded{
+            font-family: 'Cormorant', 'Inter' , sans-serif, cursive;
+        }
+
+/* Fim Pré Carregamento De Fontes */
+
+
+
+.container-background{
+    background-image: url(../assets/background-ondas-3d-vermelho-claro-escuro-vinho-quinto-background.png);
+    background-size:cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+   
+}
+
+
+
+
+/* Começo Navbar */
+
+.navbar{
+    font-family: 'Cormorant' , sans-serif;
+    background:transparent;
+    border-bottom: #B5986D 1px solid;
+}
+a.nav-link{
+    letter-spacing: .9px;
+    font-weight: lighter;
+}
+.nav-link:link, .navbar-brand:link, 
+.navbar-brand:visited{
+    color: #B5986D;
+    text-transform: uppercase;    
+}
+
+a.nav-link:hover{
+    color: #724927;
+    transition: .6s;
+}
+a.nav-link:visited{
+    color: rgb(252, 231, 205);
+}
+a.nav-link:active{
+    color: rgb(228, 129, 112);
+}
+
+a.navbar-brand img:hover{
+    width: 28px;
+    height: 35px;
+    transition: .1s;
+}
+.navbar-brand img{
+    width: 30px;
+    height: 37px;
+} 
+.custom-toggler {
+    background-color: #B5986D; 
+    border-color: #B5986D; 
+    color: #B5986D; 
+  }
+  .custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23B5986D' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+  
+  /* Fim Navbar */
+
+
+  
