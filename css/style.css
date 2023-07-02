@@ -440,7 +440,7 @@ img .carousel-item{
         position: absolute;
         display: flex;
         justify-content: center; 
-        top: 79%;     
+        top: 125%;     
     }
     .manual-btn{
         border: 2px solid #B5986D;
@@ -452,6 +452,7 @@ img .carousel-item{
     .manual-btn:not(:last-child){
         margin-right:85px;
     }
+    
 }
 
 
@@ -502,6 +503,10 @@ img .carousel-item{
     z-index: 2;
     top: -60px;
     pointer-events: none;
+}
+@media (min-width:1300px){
+    .terceiro-container-background{
+    margin-top: 225px;}
 }
 @media (max-width: 1439px)
 {
@@ -562,6 +567,11 @@ img .carousel-item{
     right: 81.1%;
     margin: 0;
     padding: 0;
+}
+@media (min-width:1300px){
+    .img-fluid{
+        margin-top: 100px;
+    }
 }
 @media (min-width:768px) and (max-width:1024px){
     .container-degustacao{
