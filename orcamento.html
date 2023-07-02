@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
         
 </head>
-<body class="container-background container-fluid p-0">
-    
-        <nav class="navbar navbar-expand-lg m-0 px-5">
+<body>
+  <div class="container-background container-fluid p-0">
+  <nav class="navbar navbar-expand-lg m-0 px-5">
             <a class="navbar-brand" href="#home"><img src="assets/logo.png" alt="Logo da empresa Golden Place, letras G e P maiúsculas, sobreposta uma sobre a outra, de tamanho grande e com tons de cor dourado claro"></a>
             <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -43,11 +43,184 @@
               </ul>
             </div>
           
-        </nav>
+  </nav>
+  <div class="container d-flex justify-content-center">
+    <div class="container-form">
+            <header>Orçamento</header>
+            <div class="progress-barr">
+              <div class="step">
+                <p>Nome</p>
+                <div class="bullet">
+                  <span>1</span>
+                </div>
+                <div class="check fas fa-check"></div>
+              </div>
+              <div class="step">
+                <p>Contato</p>
+                <div class="bullet">
+                  <span>2</span>
+                </div>
+                <div class="check fas fa-check"></div>
+              </div>
+              <div class="step">
+                <p>Data</p>
+                <div class="bullet">
+                  <span>3</span>
+                </div>
+                <div class="check fas fa-check"></div>
+              </div>
+              <div class="step">
+                <p>Enviar</p>
+                <div class="bullet">
+                  <span>4</span>
+                </div>
+                <div class="check fas fa-check"></div>
+              </div>
+            </div>
+            <div class="form-outer">
+              <form action="#">
+                <div class="page slide-page">
+                  <div class="title">Informação básica:</div>
+                  <div class="field">
+                    <div class="label">Primeiro nome</div>
+                    <input type="text">
+                  </div>
+                  <div class="field">
+                    <div class="label">Sobrenome</div>
+                    <input type="text">
+                  </div>
+                  <div class="field">
+                    <button class="firstNext next">Próximo</button>
+                  </div>
+                </div>
+      
+                <div class="page">
+                  <div class="title">Informações de contato</div>
+                  <div class="field">
+                    <div class="label">Endereço de e-mail</div>
+                    <input type="text">
+                  </div>
+                  <div class="field">
+                    <div class="label">Número de telefone</div>
+                    <input type="Number">
+                  </div>
+                  <div class="field btns">
+                    <button class="prev-1 prev">Anterior</button>
+                    <button class="next-1 next">Próximo</button>
+                  </div>
+                </div>
+      
+                <div class="page">
+                  <div class="title">Nascimento:</div>
+                  <div class="field">
+                    <div class="label">Data</div>
+                    <input type="text">
+                  </div>
+                  <div class="field">
+                    <div class="label">Gênero</div>
+                    <select>
+                      <option>Masculino</option>
+                      <option>Feminino</option>
+                      <option>Outros</option>
+                    </select>
+                  </div>
+                  <div class="field btns">
+                    <button class="prev-2 prev">Anterior</button>
+                    <button class="next-2 next">Próximo</button>
+                  </div>
+                </div>
+      
+                <div class="page">
+                  <div class="title">Detalhes de login:</div>
+                  <div class="field">
+                    <div class="label">Nome do usuário</div>
+                    <input type="text">
+                  </div>
+                  <div class="field">
+                    <div class="label">Senha</div>
+                    <input type="password">
+                  </div>
+                  <div class="field btns">
+                    <button class="prev-3 prev">Anterior</button>
+                    <button class="submit">Enviar</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+    </div>
+  </div>  
+  
+</div>
         
-       
-             
-        
-   
+   <script>
+    const slidePage = document.querySelector(".slide-page");
+const nextBtnFirst = document.querySelector(".firstNext");
+const prevBtnSec = document.querySelector(".prev-1");
+const nextBtnSec = document.querySelector(".next-1");
+const prevBtnThird = document.querySelector(".prev-2");
+const nextBtnThird = document.querySelector(".next-2");
+const prevBtnFourth = document.querySelector(".prev-3");
+const submitBtn = document.querySelector(".submit");
+const progressText = [...document.querySelectorAll(".step p")];
+const progressCheck = [...document.querySelectorAll(".step .check")];
+const bullet = [...document.querySelectorAll(".step .bullet")];
+let max = 4;
+let current = 1;
+
+nextBtnFirst.addEventListener("click", function(){
+  slidePage.style.marginLeft = "-25%";
+  bullet[current - 1].classList.add("active");
+  progressCheck[current - 1].classList.add("active");
+  progressText[current - 1].classList.add("active");
+  current += 1;
+});
+nextBtnSec.addEventListener("click", function(){
+  slidePage.style.marginLeft = "-50%";
+  bullet[current - 1].classList.add("active");
+  progressCheck[current - 1].classList.add("active");
+  progressText[current - 1].classList.add("active");
+  current += 1;
+});
+nextBtnThird.addEventListener("click", function(){
+  slidePage.style.marginLeft = "-75%";
+  bullet[current - 1].classList.add("active");
+  progressCheck[current - 1].classList.add("active");
+  progressText[current - 1].classList.add("active");
+  current += 1;
+});
+submitBtn.addEventListener("click", function(){
+  bullet[current - 1].classList.add("active");
+  progressCheck[current - 1].classList.add("active");
+  progressText[current - 1].classList.add("active");
+  current += 1;
+  setTimeout(function(){
+    alert("Your Form Successfully Signed up");
+    location.reload();
+  },800);
+});
+
+prevBtnSec.addEventListener("click", function(){
+  slidePage.style.marginLeft = "0%";
+  bullet[current - 2].classList.remove("active");
+  progressCheck[current - 2].classList.remove("active");
+  progressText[current - 2].classList.remove("active");
+  current -= 1;
+});
+prevBtnThird.addEventListener("click", function(){
+  slidePage.style.marginLeft = "-25%";
+  bullet[current - 2].classList.remove("active");
+  progressCheck[current - 2].classList.remove("active");
+  progressText[current - 2].classList.remove("active");
+  current -= 1;
+});
+prevBtnFourth.addEventListener("click", function(){
+  slidePage.style.marginLeft = "-50%";
+  bullet[current - 2].classList.remove("active");
+  progressCheck[current - 2].classList.remove("active");
+  progressText[current - 2].classList.remove("active");
+  current -= 1;
+});
+
+   </script>
 </body>
 </html>
