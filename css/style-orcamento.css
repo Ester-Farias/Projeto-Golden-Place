@@ -95,12 +95,15 @@ a.navbar-brand img:hover{
 
 
 
-
+/*
 ::selection{
   color: #fff;
   background: #00cc00;
 }
+*/
+
 .container-form{
+  height: auto;
   width: 400px;
   background: transparent;
   text-align: center;
@@ -108,27 +111,39 @@ a.navbar-brand img:hover{
   border: 1px solid #B5986D;
   padding: 30px 35px 0px 35px;
 }
+
+.page{
+  margin-right: px;
+}
 .container-form header{
+  text-transform: uppercase;
   font-size: 35px;
   font-weight: 600;
   margin: 0 0 30px 0;
 }
+
 .container-form .form-outer{
   width: 100%;
   overflow: hidden;
 }
+
 .container-form .form-outer form{
   display: flex;
   width: 400%;
 }
+
 .form-outer form .page{
   width: 25%;
   transition: margin-left 0.3s ease-in-out;
 }
+
 .form-outer form .page .title{
   text-align: left;
   font-size: 25px;
   font-weight: 500;
+}
+.content-cardapio, .form-check, .field-cardapio{
+  font-family: 'Inter';
 }
 .form-outer form .page .field{
   width: 330px;
@@ -136,19 +151,37 @@ a.navbar-brand img:hover{
   margin: 45px 0;
   display: flex;
   position: relative;
+  font-family: 'Inter';
 }
+
 form .page .field .label{
   position: absolute;
   top: -30px;
   font-weight: 500;
 }
+.label-p-entradas{
+  padding: 0;
+  margin: 0;
+}
 form .page .field input{
-    width: 100%;
+    width: 90%;
     font-size: 18px;
     background-color: transparent;
     border: none;
     border-bottom: #B5986D 1px solid;
     color: #B5986D;
+}
+.frist-form-check{
+  padding-top: 10px;
+  margin: 0;
+}
+.form-check{
+  margin:0;
+  padding-bottom: 10px;
+}
+.form-check-input-convidados{
+  cursor: pointer;
+  margin-left: -205px;
 }
 form .page .field select{
   width: 100%;
@@ -161,50 +194,57 @@ form .page .field select{
 }
 
 form .page .field button{
-  width: 100%;
+  width: 30%;
   height: calc(100% + 5px);
   border: none;
-  background: #8b2828;
+  background: transparent;
+  border-bottom: 1px solid #B5986D;
   margin-top: -20px;
-  border-radius: 5px;
   color: #fff;
   cursor: pointer;
   font-size: 18px;
   font-weight: 500;
   letter-spacing: 1px;
-  text-transform: uppercase;
   transition: 0.5s ease;
+  text-align: left;
 }
+
 form .page .field button:hover{
-  background: #B5986D;
   color: #180000;
 }
+
 form .page .btns button{
   margin-top: -20px!important;
 }
+
 form .page .btns button.prev{
   margin-right: 3px;
   font-size: 17px;
 }
+
 form .page .btns button.next{
   margin-left: 3px;
 }
+
 .container-form .progress-barr{
   display: flex;
   margin: 40px 0;
   user-select: none;
 }
+
 .container-form .progress-barr .step{
   text-align: center;
   width: 100%;
   position: relative;
 }
+
 .container-form .progress-barr .step p{
   font-weight: 500;
   font-size: 18px;
   color: #B5986D;
   margin-bottom: 8px;
 }
+
 .progress-barr .step .bullet{
   height: 25px;
   width: 25px;
@@ -217,18 +257,24 @@ form .page .btns button.next{
   font-size: 17px;
   line-height: 25px;
 }
+/*
 .progress-barr .step .bullet.active{
   border-color: #8b2828;
   background: #8b2828;
 }
+*/
 .progress-barr .step .bullet span{
   position: absolute;
+  font-family: 'inter';
   left: 50%;
+  top: 0%;
+  transform: translateY(0%);
   transform: translateX(-50%);
 }
 .progress-barr .step .bullet.active span{
   display: none;
 }
+
 .progress-barr .step .bullet:before,
 .progress-barr .step .bullet:after{
   position: absolute;
@@ -239,25 +285,30 @@ form .page .btns button.next{
   width: 44px;
   background: #724927;
 }
+
 .progress-barr .step .bullet.active:after{
   background: #8b2828;
   transform: scaleX(0);
   transform-origin: left;
   animation: animate 0.3s linear forwards;
 }
+
 @keyframes animate {
   100%{
     transform: scaleX(1);
   }
 }
+
 .progress-barr .step:last-child .bullet:before,
 .progress-barr .step:last-child .bullet:after{
   display: none;
 }
+
 .progress-barr .step p.active{
   color: #8b2828;
   transition: 0.2s linear;
 }
+
 .progress-barr .step .check{
   position: absolute;
   left: 50%;
@@ -266,6 +317,7 @@ form .page .btns button.next{
   transform: translate(-50%, -50%);
   display: none;
 }
+
 .progress-barr .step .check.active{
   display: block;
   color: #fff;
@@ -275,3 +327,4 @@ form .page .btns button.next{
 .dropdown-menu .dropdown-item{
   background-color: transparent;
 }
+
